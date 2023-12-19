@@ -37,9 +37,8 @@ let package = Package(
                 .linkedLibrary("bz2.1.0"),
                 .linkedLibrary("sqlite3.0")
             ],
-            resources: [
-                .copy("Gizo.bundle")
-            ]
+            path: "Sources",
+            resources: [.copy("Gizo.bundle")]
         )
     ]
 )
