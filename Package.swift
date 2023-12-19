@@ -38,7 +38,7 @@ let package = Package(
                 .linkedLibrary("z"),
                 .linkedLibrary("bz2"),
                 .linkedLibrary("sqlite3"),
-                .linkedFramework("CoreML")
+                .linkedFramework("CoreML"),
                 .linkedFramework("SystemConfiguration")
             ]
         )
