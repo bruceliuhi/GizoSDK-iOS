@@ -21,8 +21,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "opencv2",
-            url: "https://github.com/opencv/opencv/releases/download/4.8.0/opencv-4.8.0-ios-framework.zip",
-            checksum: "89c33d2b0a66b287ffc7a7643bfed4ae4a0728a76a5c4c852854efdb300693b3"
+            url: "https://zangmi.art/upload/opencv2.xcframework.zip",
+            checksum: "d68b4094780451e04db624480ad2f53ec7c825b843984eb515370be18a592fe5"
         ),
         .target(
             name: "GizoSDK-iOS",
