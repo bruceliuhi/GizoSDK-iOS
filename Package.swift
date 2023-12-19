@@ -25,13 +25,13 @@ let package = Package(
             checksum: "8bc9e57a997a8c6d4c1bcdcfb4346f9cc63697f163f537deb6c5314e1aaabf0d"
         ),
         .binaryTarget(
-            name: "OpenCV",
+            name: "opencv2",
             url: "https://github.com/opencv/opencv/releases/download/4.8.0/opencv-4.8.0-ios-framework.zip",
             checksum: "89c33d2b0a66b287ffc7a7643bfed4ae4a0728a76a5c4c852854efdb300693b3"
         ),
         .target(
             name: "GizoSDK-iOS",
-            dependencies: ["MapboxMaps", "MapboxNavigation", "Python-iOS", "NumPy-iOS", "OpenCV", "GizoSDK"],
+            dependencies: ["MapboxMaps", "MapboxNavigation", "Python-iOS", "NumPy-iOS", "opencv2", "GizoSDK"],
             path: "Sources",
             resources: [.copy("Gizo.bundle")],
             linkerSettings: [
