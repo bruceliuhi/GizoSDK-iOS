@@ -16,7 +16,7 @@ let package = Package(
         .package(name: "MapboxMaps", url: "https://github.com/mapbox/mapbox-maps-ios.git", .exact("10.12.3")),
         .package(name: "MapboxNavigation", url: "https://github.com/mapbox/mapbox-navigation-ios.git", .exact("2.12.0")),
         .package(name: "Python-iOS", url: "https://github.com/kewlbear/Python-iOS.git", from: "0.1.1-b"),
-        .package(name: "NumPy-iOS", url: "https://github.com/kewlbear/NumPy-iOS.git", .exact("main")),
+        .package(name: "NumPy-iOS", url: "https://github.com/kewlbear/NumPy-iOS.git", .branch("main")),
     ],
     targets: [
         .binaryTarget(
