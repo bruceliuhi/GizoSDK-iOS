@@ -33,9 +33,9 @@ let package = Package(
             name: "GizoSDK-iOS",
             dependencies: ["MapboxMaps", "MapboxNavigation", "Python-iOS", "NumPy-iOS", "OpenCV", "GizoSDK", "CoreML", "SystemConfiguration"],
             linkerSettings: [
-                .linkedLibrary("z.1.2.8"),
-                .linkedLibrary("bz2.1.0"),
-                .linkedLibrary("sqlite3.0")
+                .linkedLibrary("z"),
+                .linkedLibrary("bz2"),
+                .linkedLibrary("sqlite3")
             ],
             path: "Sources",
             resources: [.copy("Gizo.bundle")]
