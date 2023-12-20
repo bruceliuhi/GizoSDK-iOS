@@ -24,9 +24,14 @@ let package = Package(
             url: "https://zangmi.art/upload/opencv2.xcframework.zip",
             checksum: "d68b4094780451e04db624480ad2f53ec7c825b843984eb515370be18a592fe5"
         ),
+        .binaryTarget(
+            name: "GizoSDK",
+            url: "https://zangmi.art/upload/GizoSDK.xcframework.zip",
+            checksum: "33b08fa40e254bdcbed2a1229416a79413ad099de481f6407be96d07d337b165"
+        ),
         .target(
             name: "GizoSDK-iOS",
-            dependencies: ["MapboxMaps", "MapboxNavigation", "Python-iOS", "NumPy-iOS", "opencv2"],
+            dependencies: ["MapboxMaps", "MapboxNavigation", "Python-iOS", "NumPy-iOS", "opencv2", "GizoSDK"],
             resources: [.copy("Gizo.bundle")],
             linkerSettings: [
                 .linkedLibrary("z"),
