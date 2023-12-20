@@ -28,7 +28,7 @@ let package = Package(
             name: "GizoSDK-iOS",
             dependencies: ["MapboxMaps", "MapboxNavigation", "Python-iOS", "NumPy-iOS", "opencv2"],
             path: "Sources",
-            resources: [.copy("Gizo.bundle")],
+            resources: [.process("Gizo.bundle")],
             linkerSettings: [
                 .linkedLibrary("z"),
                 .linkedLibrary("bz2"),
