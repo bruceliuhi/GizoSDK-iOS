@@ -1,3 +1,2 @@
-# GizoSDK-iOS
+# SDK Documentation
 
-A description of this package.
